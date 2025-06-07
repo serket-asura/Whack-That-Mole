@@ -1,0 +1,80 @@
+/* Your code here */
+
+/*text */
+ h1 {
+  text-align: center;
+  font-family: Papyrus;
+  color:orangered;
+  background-color: black;
+ }
+
+/* playing area */
+ .pf {
+  background-color: rgb(70, 136, 4);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  overflow: hidden;
+  -ms-grid-column-align: end;
+ }
+
+
+ /*wackable space */
+.wgs {
+  height: 242px;
+  width: 350px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  background-image: url(grass.webp);
+  background-position:center;
+}
+
+/* mole head stats */
+.wgs__mole-head {
+  height: 178px;
+  width: 188px; 
+  position: absolute;
+  left: 77px;
+  transition: margin-top 0.25s;
+  animation: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+/* dirt pile stats */
+.wgs__dirt-pile {
+  height: 115px;
+  width: 312px;
+  position: absolute;
+  bottom: 0px;
+  left: 25px;
+  border-radius: 50%;
+}
+
+/* hidden mole stats */
+.wgs__mole-head--hidden {
+  margin-top: 482px;
+}
+/* UNCOMMENT THE CODE BELOW WHEN DIRECTED */
+ .sb {
+  background-color: rgb(189, 12, 154);
+  border-bottom: 1px solid #000404;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  color: white;
+  display: top;
+  font-size: 30px;
+  margin-bottom: 50px;
+  padding: 10px 20px;
+} 
+
+ .sb__mole-counter {
+  flex: 1 0 0;
+  text-align: right;
+} 
+
+ .sb__score-holder {
+  flex: 1 0 0;
+} 
+
+ .sb__game-over--hidden {
+  display: none;
+} 
